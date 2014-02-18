@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4B9CAE18B2F57200F9BAED /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4B9CAD18B2F57200F9BAED /* AssetsLibrary.framework */; };
+		5B4B9CB118B2F5EF00F9BAED /* OKIAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B9CB018B2F5EF00F9BAED /* OKIAssetsLibrary.m */; };
 		5B82472318B2F49D009F4399 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82472218B2F49D009F4399 /* Foundation.framework */; };
 		5B82472518B2F49D009F4399 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82472418B2F49D009F4399 /* CoreGraphics.framework */; };
 		5B82472718B2F49D009F4399 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82472618B2F49D009F4399 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B4B9CAD18B2F57200F9BAED /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5B4B9CAF18B2F5EF00F9BAED /* OKIAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKIAssetsLibrary.h; sourceTree = "<group>"; };
+		5B4B9CB018B2F5EF00F9BAED /* OKIAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIAssetsLibrary.m; sourceTree = "<group>"; };
 		5B82471F18B2F49D009F4399 /* iOS Media Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Media Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82472218B2F49D009F4399 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B82472418B2F49D009F4399 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4B9CAE18B2F57200F9BAED /* AssetsLibrary.framework in Frameworks */,
 				5B82472518B2F49D009F4399 /* CoreGraphics.framework in Frameworks */,
 				5B82472718B2F49D009F4399 /* UIKit.framework in Frameworks */,
 				5B82472318B2F49D009F4399 /* Foundation.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		5B82472118B2F49D009F4399 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B4B9CAD18B2F57200F9BAED /* AssetsLibrary.framework */,
 				5B82472218B2F49D009F4399 /* Foundation.framework */,
 				5B82472418B2F49D009F4399 /* CoreGraphics.framework */,
 				5B82472618B2F49D009F4399 /* UIKit.framework */,
@@ -122,6 +129,8 @@
 				5B82473B18B2F49D009F4399 /* OKIViewController.m */,
 				5B82473D18B2F49D009F4399 /* Images.xcassets */,
 				5B82472918B2F49D009F4399 /* Supporting Files */,
+				5B4B9CAF18B2F5EF00F9BAED /* OKIAssetsLibrary.h */,
+				5B4B9CB018B2F5EF00F9BAED /* OKIAssetsLibrary.m */,
 			);
 			path = "iOS Media Viewer";
 			sourceTree = "<group>";
@@ -254,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4B9CB118B2F5EF00F9BAED /* OKIAssetsLibrary.m in Sources */,
 				5B82473318B2F49D009F4399 /* OKIAppDelegate.m in Sources */,
 				5B82472F18B2F49D009F4399 /* main.m in Sources */,
 				5B82473C18B2F49D009F4399 /* OKIViewController.m in Sources */,
@@ -475,6 +485,7 @@
 				5B82475618B2F49D009F4399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B82475718B2F49D009F4399 /* Build configuration list for PBXNativeTarget "iOS Media ViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +494,7 @@
 				5B82475918B2F49D009F4399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
