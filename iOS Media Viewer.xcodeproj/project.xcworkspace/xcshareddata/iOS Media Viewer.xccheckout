@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>682FB806-0901-486D-9EA6-E18EF2E5D422</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS Media Viewer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C165EF79-222F-483E-BA2F-103EBE2612C0</key>
+		<string>https://github.com/OneOkami/iOS-Media-Viewer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS Media Viewer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C165EF79-222F-483E-BA2F-103EBE2612C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OneOkami/iOS-Media-Viewer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C165EF79-222F-483E-BA2F-103EBE2612C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C165EF79-222F-483E-BA2F-103EBE2612C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Media-Viewer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
