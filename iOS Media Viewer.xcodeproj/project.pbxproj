@@ -17,7 +17,6 @@
 		5B82473318B2F49D009F4399 /* OKIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B82473218B2F49D009F4399 /* OKIAppDelegate.m */; };
 		5B82473618B2F49D009F4399 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82473418B2F49D009F4399 /* Main_iPhone.storyboard */; };
 		5B82473918B2F49D009F4399 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82473718B2F49D009F4399 /* Main_iPad.storyboard */; };
-		5B82473C18B2F49D009F4399 /* OKIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B82473B18B2F49D009F4399 /* OKIViewController.m */; };
 		5B82473E18B2F49D009F4399 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B82473D18B2F49D009F4399 /* Images.xcassets */; };
 		5B82474518B2F49D009F4399 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82474418B2F49D009F4399 /* XCTest.framework */; };
 		5B82474618B2F49D009F4399 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82472218B2F49D009F4399 /* Foundation.framework */; };
@@ -52,8 +51,6 @@
 		5B82473218B2F49D009F4399 /* OKIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKIAppDelegate.m; sourceTree = "<group>"; };
 		5B82473518B2F49D009F4399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5B82473818B2F49D009F4399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		5B82473A18B2F49D009F4399 /* OKIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKIViewController.h; sourceTree = "<group>"; };
-		5B82473B18B2F49D009F4399 /* OKIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKIViewController.m; sourceTree = "<group>"; };
 		5B82473D18B2F49D009F4399 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5B82474318B2F49D009F4399 /* iOS Media ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Media ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82474418B2F49D009F4399 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,8 +122,6 @@
 				5B82473218B2F49D009F4399 /* OKIAppDelegate.m */,
 				5B82473418B2F49D009F4399 /* Main_iPhone.storyboard */,
 				5B82473718B2F49D009F4399 /* Main_iPad.storyboard */,
-				5B82473A18B2F49D009F4399 /* OKIViewController.h */,
-				5B82473B18B2F49D009F4399 /* OKIViewController.m */,
 				5B82473D18B2F49D009F4399 /* Images.xcassets */,
 				5B82472918B2F49D009F4399 /* Supporting Files */,
 				5B4B9CAF18B2F5EF00F9BAED /* OKIAssetsLibrary.h */,
@@ -266,7 +261,6 @@
 				5B4B9CB118B2F5EF00F9BAED /* OKIAssetsLibrary.m in Sources */,
 				5B82473318B2F49D009F4399 /* OKIAppDelegate.m in Sources */,
 				5B82472F18B2F49D009F4399 /* main.m in Sources */,
-				5B82473C18B2F49D009F4399 /* OKIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
