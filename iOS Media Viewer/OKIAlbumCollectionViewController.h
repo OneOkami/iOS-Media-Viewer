@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #include <AssetsLibrary/AssetsLibrary.h>
 
-@interface OKIAlbumCollectionViewController : UICollectionViewController
+@interface OKIAlbumCollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) ALAssetsGroup *album;
 @property (strong, nonatomic) NSMutableArray *assets;
