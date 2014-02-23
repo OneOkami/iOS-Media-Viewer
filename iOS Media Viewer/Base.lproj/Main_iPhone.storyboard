@@ -36,6 +36,7 @@
                                 <connections>
                                     <outlet property="albumImageView" destination="sez-Ii-8hi" id="R7B-k6-LYG"/>
                                     <outlet property="albumTitleLabel" destination="Mni-I5-M56" id="fY3-jp-Ijh"/>
+                                    <segue destination="uxW-PN-VkW" kind="push" identifier="albumMediaSegue" id="NFe-W8-fGG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -48,7 +49,53 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRu-5L-oMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="53"/>
+            <point key="canvasLocation" x="635" y="53"/>
+        </scene>
+        <!--Album Collection View Controller - Media-->
+        <scene sceneID="dbs-Lf-L3k">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="uxW-PN-VkW" customClass="OKIAlbumCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="13e-sR-c9R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zIP-dE-fuO">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="assetCell" id="Uet-qV-CK1" customClass="OKIAlbumCollectionViewCell">
+                                <rect key="frame" x="0.0" y="64" width="104" height="104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-to-TFZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <size key="customSize" width="104" height="104"/>
+                                <connections>
+                                    <outlet property="imageView" destination="0xJ-to-TFZ" id="4Tv-ma-rPu"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="uxW-PN-VkW" id="ndz-xQ-ZdV"/>
+                            <outlet property="delegate" destination="uxW-PN-VkW" id="gAZ-zO-IcR"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Media" id="UGw-5c-hy2"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RR9-zx-DIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="53"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GFd-P8-CNs">

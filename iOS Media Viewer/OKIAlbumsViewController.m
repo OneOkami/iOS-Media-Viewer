@@ -9,6 +9,7 @@
 #import "OKIAlbumsViewController.h"
 #import "OKIAssetsLibrary.h"
 #import "OKIAlbumTableViewCell.h"
+#import "OKIAlbumCollectionViewController.h"
 
 @interface OKIAlbumsViewController ()
 
@@ -75,6 +76,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // reuse the default cell in the table view for each row
     static NSString *CellIdentifier = @"albumCell";
     OKIAlbumTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -123,16 +125,20 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
+    OKIAlbumCollectionViewController *albumCollectionVC = [segue destinationViewController];
+    
     // Pass the selected object to the new view controller.
+    NSIndexPath *selectedIndex = [self.tableView indexPathForSelectedRow];
+    ALAssetsGroup *album = self.albums[selectedIndex.row];
+    [albumCollectionVC setAlbum:album];
+    
+    [self.tableView deselectRowAtIndexPath:selectedIndex animated:YES];
 }
-
- */
 
 @end

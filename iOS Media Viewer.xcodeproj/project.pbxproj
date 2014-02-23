@@ -25,6 +25,8 @@
 		5B82474718B2F49D009F4399 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82472618B2F49D009F4399 /* UIKit.framework */; };
 		5B82474F18B2F49D009F4399 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B82474D18B2F49D009F4399 /* InfoPlist.strings */; };
 		5B82475118B2F49D009F4399 /* iOS_Media_ViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B82475018B2F49D009F4399 /* iOS_Media_ViewerTests.m */; };
+		5BD7AA9E18B96A3300C71366 /* OKIAlbumCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7AA9D18B96A3300C71366 /* OKIAlbumCollectionViewController.m */; };
+		5BD7AAA118B9811300C71366 /* OKIAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7AAA018B9811300C71366 /* OKIAlbumCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		5B82474C18B2F49D009F4399 /* iOS Media ViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Media ViewerTests-Info.plist"; sourceTree = "<group>"; };
 		5B82474E18B2F49D009F4399 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B82475018B2F49D009F4399 /* iOS_Media_ViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Media_ViewerTests.m; sourceTree = "<group>"; };
+		5BD7AA9C18B96A3300C71366 /* OKIAlbumCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKIAlbumCollectionViewController.h; sourceTree = "<group>"; };
+		5BD7AA9D18B96A3300C71366 /* OKIAlbumCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIAlbumCollectionViewController.m; sourceTree = "<group>"; };
+		5BD7AA9F18B9811300C71366 /* OKIAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKIAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		5BD7AAA018B9811300C71366 /* OKIAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIAlbumCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,10 @@
 				5B106BE618B71092004A9137 /* OKIAlbumsViewController.m */,
 				5B106BE818B71366004A9137 /* OKIAlbumTableViewCell.h */,
 				5B106BE918B71366004A9137 /* OKIAlbumTableViewCell.m */,
+				5BD7AA9C18B96A3300C71366 /* OKIAlbumCollectionViewController.h */,
+				5BD7AA9D18B96A3300C71366 /* OKIAlbumCollectionViewController.m */,
+				5BD7AA9F18B9811300C71366 /* OKIAlbumCollectionViewCell.h */,
+				5BD7AAA018B9811300C71366 /* OKIAlbumCollectionViewCell.m */,
 			);
 			path = "iOS Media Viewer";
 			sourceTree = "<group>";
@@ -270,8 +280,10 @@
 			files = (
 				5B106BEA18B71366004A9137 /* OKIAlbumTableViewCell.m in Sources */,
 				5B4B9CB118B2F5EF00F9BAED /* OKIAssetsLibrary.m in Sources */,
+				5BD7AA9E18B96A3300C71366 /* OKIAlbumCollectionViewController.m in Sources */,
 				5B82473318B2F49D009F4399 /* OKIAppDelegate.m in Sources */,
 				5B106BE718B71092004A9137 /* OKIAlbumsViewController.m in Sources */,
+				5BD7AAA118B9811300C71366 /* OKIAlbumCollectionViewCell.m in Sources */,
 				5B82472F18B2F49D009F4399 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
