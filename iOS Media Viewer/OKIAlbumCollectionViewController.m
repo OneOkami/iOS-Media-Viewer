@@ -9,6 +9,7 @@
 #import "OKIAlbumCollectionViewController.h"
 #import "OKIAssetsLibrary.h"
 #import "OKIAlbumCollectionViewCell.h"
+#import "OKIPhotoAssetViewController.h"
 
 @interface OKIAlbumCollectionViewController ()
 
@@ -96,6 +97,16 @@
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(2.0f, 0.0f, 2.0f, 0.0f);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // the media collection should potentially contain photos and videos but for now treat all media as photos
+    OKIPhotoAssetViewController *photoAssetViewController = (OKIPhotoAssetViewController *)[segue destinationViewController];
+    
+    NSIndexPath *selectedIndex = [self.collectionView indexPathsForSelectedItems][0];
+    ALAsset *asset = self.assets[selectedIndex.row];
+    photoAssetViewController.photo = asset;
 }
 
 @end

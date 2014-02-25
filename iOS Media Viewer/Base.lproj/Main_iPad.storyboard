@@ -49,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLz-Q1-udt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-342"/>
+            <point key="canvasLocation" x="880" y="-342"/>
         </scene>
         <!--Album Collection View Controller - Media-->
         <scene sceneID="3fZ-d7-T50">
@@ -95,7 +95,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CqA-js-RAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="-342"/>
+            <point key="canvasLocation" x="1713" y="-342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="17m-D5-iP6">

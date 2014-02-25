@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B106BE718B71092004A9137 /* OKIAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B106BE618B71092004A9137 /* OKIAlbumsViewController.m */; };
 		5B106BEA18B71366004A9137 /* OKIAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B106BE918B71366004A9137 /* OKIAlbumTableViewCell.m */; };
+		5B2C8D2218BC48880016A3C4 /* OKIPhotoAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C8D2118BC48880016A3C4 /* OKIPhotoAssetViewController.m */; };
 		5B4B9CAE18B2F57200F9BAED /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4B9CAD18B2F57200F9BAED /* AssetsLibrary.framework */; };
 		5B4B9CB118B2F5EF00F9BAED /* OKIAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B9CB018B2F5EF00F9BAED /* OKIAssetsLibrary.m */; };
 		5B82472318B2F49D009F4399 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B82472218B2F49D009F4399 /* Foundation.framework */; };
@@ -44,6 +45,8 @@
 		5B106BE618B71092004A9137 /* OKIAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIAlbumsViewController.m; sourceTree = "<group>"; };
 		5B106BE818B71366004A9137 /* OKIAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKIAlbumTableViewCell.h; sourceTree = "<group>"; };
 		5B106BE918B71366004A9137 /* OKIAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIAlbumTableViewCell.m; sourceTree = "<group>"; };
+		5B2C8D2018BC48880016A3C4 /* OKIPhotoAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKIPhotoAssetViewController.h; sourceTree = "<group>"; };
+		5B2C8D2118BC48880016A3C4 /* OKIPhotoAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIPhotoAssetViewController.m; sourceTree = "<group>"; };
 		5B4B9CAD18B2F57200F9BAED /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5B4B9CAF18B2F5EF00F9BAED /* OKIAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKIAssetsLibrary.h; sourceTree = "<group>"; };
 		5B4B9CB018B2F5EF00F9BAED /* OKIAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKIAssetsLibrary.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				5BD7AA9D18B96A3300C71366 /* OKIAlbumCollectionViewController.m */,
 				5BD7AA9F18B9811300C71366 /* OKIAlbumCollectionViewCell.h */,
 				5BD7AAA018B9811300C71366 /* OKIAlbumCollectionViewCell.m */,
+				5B2C8D2018BC48880016A3C4 /* OKIPhotoAssetViewController.h */,
+				5B2C8D2118BC48880016A3C4 /* OKIPhotoAssetViewController.m */,
 			);
 			path = "iOS Media Viewer";
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				5BD7AA9E18B96A3300C71366 /* OKIAlbumCollectionViewController.m in Sources */,
 				5B82473318B2F49D009F4399 /* OKIAppDelegate.m in Sources */,
 				5B106BE718B71092004A9137 /* OKIAlbumsViewController.m in Sources */,
+				5B2C8D2218BC48880016A3C4 /* OKIPhotoAssetViewController.m in Sources */,
 				5BD7AAA118B9811300C71366 /* OKIAlbumCollectionViewCell.m in Sources */,
 				5B82472F18B2F49D009F4399 /* main.m in Sources */,
 			);
