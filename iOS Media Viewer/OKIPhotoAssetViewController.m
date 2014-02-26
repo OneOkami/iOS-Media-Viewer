@@ -45,4 +45,9 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self.imageView setFrame:self.view.frame];
+}
+
 @end

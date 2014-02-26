@@ -103,7 +103,6 @@
 {
     // the media collection should potentially contain photos and videos but for now treat all media as photos
     OKIPhotoAssetViewController *photoAssetViewController = (OKIPhotoAssetViewController *)[segue destinationViewController];
-    
     NSIndexPath *selectedIndex = [self.collectionView indexPathsForSelectedItems][0];
     ALAsset *asset = self.assets[selectedIndex.row];
     photoAssetViewController.photo = asset;
