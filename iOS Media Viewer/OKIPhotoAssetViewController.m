@@ -31,9 +31,6 @@
     UIImage *image = [UIImage imageWithCGImage:[[self.photo defaultRepresentation] fullScreenImage]];
     [self.imageView sizeThatFits:[image size]];
     self.imageView.image = image;
-    
-    // hide the navigation bar
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,19 +47,28 @@
 
 - (void)viewDidLayoutSubviews
 {
+    // set the image view to the full screen frame once all views have been laid out
     [self.imageView setFrame:self.view.frame];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    // the visibility of the status bar should toggle with the navigation bar
+    return [self.navigationController navigationBar].hidden;
 }
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    // reset the image view frame after an orientation rotation
     [self.imageView setFrame:self.view.frame];
 }
 
 - (IBAction)userTappedScene:(UITapGestureRecognizer *)sender
 {
-    // toggle the visibility of the status bar and naviation bar
+    // toggle the visibility of the status bar and naviation bar when the user taps the scene
     BOOL navigationBarIsHidden = [self.navigationController navigationBar].hidden;
     [self.navigationController setNavigationBarHidden:!navigationBarIsHidden animated:NO];
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 @end

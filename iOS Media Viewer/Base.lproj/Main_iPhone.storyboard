@@ -116,6 +116,10 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JCL-tv-xOk" appends="YES" id="D85-Xn-mYc"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="ABJ-dj-Jg2">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="jXk-Aa-O3J">
@@ -126,9 +130,15 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Mj1-du-6EO" id="clu-qI-ABo"/>
+                        <outlet property="tapGestureRecognizer" destination="JCL-tv-xOk" id="e8t-hl-497"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buC-h0-co0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JCL-tv-xOk">
+                    <connections>
+                        <action selector="userTappedScene:" destination="GpJ-Y3-Jbl" id="ahM-e3-m8H"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1375" y="53"/>
         </scene>
