@@ -31,6 +31,9 @@
     UIImage *image = [UIImage imageWithCGImage:[[self.photo defaultRepresentation] fullScreenImage]];
     [self.imageView sizeThatFits:[image size]];
     self.imageView.image = image;
+    
+    // hide the navigation bar
+    //[self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,9 +48,19 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [self.imageView setFrame:self.view.frame];
+}
+
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     [self.imageView setFrame:self.view.frame];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end
