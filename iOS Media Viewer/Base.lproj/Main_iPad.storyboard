@@ -113,9 +113,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiQ-Wg-Eer">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1pc-Yu-Axe" appends="YES" id="S2N-K5-bFH"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="lpv-Gp-RpQ"/>
                     <connections>
@@ -123,6 +128,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xad-ha-xnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1pc-Yu-Axe">
+                    <connections>
+                        <action selector="userTappedScene:" destination="uSP-vA-zkZ" id="Jsz-1k-aFK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2554" y="-342"/>
         </scene>

@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property ALAsset *photo;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGestureRecognizer;
 
 @end

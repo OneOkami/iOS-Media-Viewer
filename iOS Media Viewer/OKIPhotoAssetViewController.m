@@ -33,7 +33,7 @@
     self.imageView.image = image;
     
     // hide the navigation bar
-    //[self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,9 +58,11 @@
     [self.imageView setFrame:self.view.frame];
 }
 
-- (BOOL)prefersStatusBarHidden
+- (IBAction)userTappedScene:(UITapGestureRecognizer *)sender
 {
-    return YES;
+    // toggle the visibility of the status bar and naviation bar
+    BOOL navigationBarIsHidden = [self.navigationController navigationBar].hidden;
+    [self.navigationController setNavigationBarHidden:!navigationBarIsHidden animated:NO];
 }
 
 @end
