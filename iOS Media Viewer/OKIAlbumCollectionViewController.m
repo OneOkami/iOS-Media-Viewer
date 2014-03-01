@@ -10,6 +10,7 @@
 #import "OKIAssetsLibrary.h"
 #import "OKIAlbumCollectionViewCell.h"
 #import "OKIPhotoAssetViewController.h"
+#import "OKIVideoAssetViewController.h"
 
 @interface OKIAlbumCollectionViewController ()
 
@@ -99,13 +100,38 @@
     return UIEdgeInsetsMake(2.0f, 0.0f, 2.0f, 0.0f);
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    // determine the type of asset selected (should be either a photo or video) and peform the appropriate segue
+    ALAsset *selectedAsset = self.assets[indexPath.row];
+    NSString *assetType = [selectedAsset valueForProperty:ALAssetPropertyType];
+    if([assetType isEqualToString:ALAssetTypePhoto])
+    {
+        [self performSegueWithIdentifier:@"photoSelectionSegue" sender:selectedAsset];
+    }
+    else if([assetType isEqualToString:ALAssetTypeVideo])
+    {
+        [self performSegueWithIdentifier:@"videoSelectionSegue" sender:selectedAsset];
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // the media collection should potentially contain photos and videos but for now treat all media as photos
-    OKIPhotoAssetViewController *photoAssetViewController = (OKIPhotoAssetViewController *)[segue destinationViewController];
-    NSIndexPath *selectedIndex = [self.collectionView indexPathsForSelectedItems][0];
-    ALAsset *asset = self.assets[selectedIndex.row];
-    photoAssetViewController.photo = asset;
+    // the sender should be referencing the asset tapped in the album collection view
+    ALAsset *asset = (ALAsset *)sender;
+    NSString *segueIdentifier = [segue identifier];
+    
+    // prepare for the segue depending on which scene we're segueing to
+    if([segueIdentifier isEqualToString:@"photoSelectionSegue"])
+    {
+        OKIPhotoAssetViewController *photoAssetViewController = (OKIPhotoAssetViewController *)[segue destinationViewController];
+        photoAssetViewController.photo = asset;
+    }
+    else if([segueIdentifier isEqualToString:@"videoSelectionSegue"])
+    {
+        OKIVideoAssetViewController *videoAssetViewController = (OKIVideoAssetViewController *)[segue destinationViewController];
+        videoAssetViewController.assetURL = [asset valueForProperty:ALAssetPropertyAssetURL];
+    }
 }
 
 @end

@@ -83,7 +83,6 @@
                                 <size key="customSize" width="104" height="104"/>
                                 <connections>
                                     <outlet property="imageView" destination="0xJ-to-TFZ" id="4Tv-ma-rPu"/>
-                                    <segue destination="GpJ-Y3-Jbl" kind="push" identifier="photoSelectionSegue" id="AVb-E3-Q4d"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -93,6 +92,10 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Media" id="UGw-5c-hy2"/>
+                    <connections>
+                        <segue destination="GpJ-Y3-Jbl" kind="push" identifier="photoSelectionSegue" id="rlj-uW-tda"/>
+                        <segue destination="r5O-Te-VBd" kind="push" identifier="videoSelectionSegue" id="JMJ-GO-4Tw"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RR9-zx-DIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,7 +143,26 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1375" y="53"/>
+            <point key="canvasLocation" x="1454" y="53"/>
+        </scene>
+        <!--Video Asset View Controller-->
+        <scene sceneID="uSK-oy-rgE">
+            <objects>
+                <viewController id="r5O-Te-VBd" customClass="OKIVideoAssetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h5L-T2-p0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mr2-6P-tW3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5A8-KV-bDn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xww-uL-ppF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuK-45-cdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="702"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GFd-P8-CNs">
