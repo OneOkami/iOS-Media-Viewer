@@ -65,8 +65,17 @@
 
 - (IBAction)userTappedScene:(UITapGestureRecognizer *)sender
 {
-    // toggle the visibility of the status bar and naviation bar when the user taps the scene
+    // toggle the visibility of the status bar and naviation bar when the user taps the scene and update the background color to white or black depending on if the bars or visible or not respectively
     BOOL navigationBarIsHidden = [self.navigationController navigationBar].hidden;
+    if(navigationBarIsHidden)
+    {
+        [self.imageView setBackgroundColor:[UIColor  whiteColor]];
+    }
+    else
+    {
+        [self.imageView setBackgroundColor:[UIColor blackColor]];
+    }
+    
     [self.navigationController setNavigationBarHidden:!navigationBarIsHidden animated:NO];
     [self setNeedsStatusBarAppearanceUpdate];
 }

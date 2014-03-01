@@ -1,7 +1,7 @@
 //
 //  OKIPhotoAssetViewController.h
 //  iOS Media Viewer
-//
+//  View Controller for viewing photos
 //  Created by Christopher Shell on 2/24/14.
 //  Copyright (c) 2014 OneOkami.com. All rights reserved.
 //
