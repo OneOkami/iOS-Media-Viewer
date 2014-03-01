@@ -38,6 +38,11 @@
     self.moviePlayerController.shouldAutoplay = NO; // prevents the video from automatically playing as soon as the view finishes loading
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [self.moviePlayerController.view setFrame:self.view.frame];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
